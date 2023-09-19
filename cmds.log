@@ -1,0 +1,81 @@
+  470  cd Worksheet2
+  471  ls
+  472  man cp
+  473  cp 'Global YouTube Statistics.csv' /Worksheet3
+  474  cd ..
+  475  ls
+  476  cp Worksheet2/'Global YouTube Statistics.csv' Worksheet3
+  477  cd Worksheet2
+  478  ls
+  479  cd ..
+  480  cd Worksheet3
+  481  ls
+  482  man sort
+  483  man sort -t
+  484  cat 'Global YouTube Statistics.csv'
+  485  man >>
+  486  grep 'United States' 'Global YouTube Statistics.csv' 
+  487  grep 'United States' 'Global YouTube Statistics.csv' > US.txt
+  488  grep 'United Kingdom' 'Global YouTube Statistics.csv' > UK.txt
+  489  grep 'India' 'Global YouTube Statistics.csv' 
+  490  grep 'United Kingdom' 'Global YouTube Statistics.csv' 
+  491  grep ',India' 'Global YouTube Statistics.csv' 
+  492  grep ',India,' 'Global YouTube Statistics.csv' 
+  493  grep ',India,' 'Global YouTube Statistics.csv' > india.txt
+  494  ls
+  495  rm india.txt UK.txt US.txt
+  496  ls
+  497  grep ',United States,' 'Global YouTube Statistics.csv'
+  498  grep ',United States,' 'Global YouTube Statistics.csv' > hme.txt
+  499  grep ',United Kingdom,' 'Global YouTube Statistics.csv' >> hme.txt
+  500  grep ',India,' 'Global YouTube Statistics.csv' >> hme.txt
+  501  man uniq
+  502  man cut
+  503  cat hme.txt
+  504  sort -nrk 16 hme.txt
+  505  sort -nrk 16,16 hme.txt
+  506  ls
+  507  rm hme.txt
+  508  grep ',India,' 'Global YouTube Statistics.csv' > india.txt
+  509  grep 'United Kingdom' 'Global YouTube Statistics.csv' > uk.txt
+  510  grep 'United States' 'Global YouTube Statistics.csv' > us.txt
+  511  sort -k16,16nr india.txt
+  512  sort -k16,16nrt india.txt
+  513  sort -k16,16nr -t india.txt
+  514  sort -k16,16nr -t, india.txt
+  515  man cut
+  516  sort -k16,16nr -t, india.txt > hme.txt
+  517  cat hme.txt
+  518  rm hme.txt
+  519  sort -k16,16nr -t, india.txt | head -n 1
+  520  sort -k16,16nr -t, us.txt | head -n 1 
+  521  sort -k16,16nr -t, uk.txt | head -n 1 
+  522  sort -k16,16nr -t, us.txt | head -n 1 > hme.txt
+  523  sort -k16,16nr -t, uk.txt | head -n 1 | cut -c 2
+  524  sort -k16,16nr -t, uk.txt | head -n 1 | cut 2
+  525  sort -k16,16nr -t, uk.txt | head -n 1 | cut -d "," -f 2
+  526  sort -k16,16nr -t, us.txt | head -n 1 | cut -d "," -f 2 > hme.txt
+  527  sort -k16,16nr -t, uk.txt | head -n 1 | cut -d "," -f 2 >> hme.txt
+  528  sort -k16,16nr -t, india.txt | head -n 1 | cut -d "," -f 2 >> hme.txt
+  529  grep ',Sports,' 'Global YouTube Statistics.csv'
+  530  grep -E '^(([^,]*,){4}Sports' 'Global YouTube Statistics.csv'
+  531  grep -E '^(([^,]*,){4})Sports' 'Global YouTube Statistics.csv'
+  532  grep -E '^(([^,]*,){4})Sports' 'Global YouTube Statistics.csv' > sports.txt
+  533  grep -E '^(([^,]*,){4})Education' 'Global YouTube Statistics.csv' > education.txt
+  534  grep -E '^(([^,]*,){4})Entertainment' 'Global YouTube Statistics.csv' > entertainment.txt
+  535  sort -k5,5nr -t, sports.txt
+  536  sort -k3,3nr -t, sports.txt
+  537  sort -k3,3nr -t, sports.txt | head -n 1 | cut -d "," -f 2
+  538  sort -k3,3nr -t, sports.txt | head -n 1 | cut -d "," -f 2 > subscribers.txt
+  539  sort -k3,3nr -t, education.txt | head -n 1 | cut -d "," -f 2 >> subscribers.txt
+  540  sort -k3,3nr -t, entertainment.txt | head -n 1 | cut -d "," -f 2 >> subscribers.txt
+  541  cat subscribers.txt
+  542  cat hme.txt
+  543  cat hme.txt > ws3.txt
+  544  cat subscribers.txt >> ws3.txt
+  545  cat ws3.txt
+  546  vi ws3.txt
+  547  cd ..
+  548  git add .
+  549  git commit -a -m "Worksheet 3"
+  550  history > cmds.log
