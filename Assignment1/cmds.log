@@ -1,9 +1,14 @@
   script Assignment1.txt
+  1.)
   mkdir Assignment1
   cd Assignment1
+  2.)
   echo $SHELL
+  3.)
   echo $HOME
+  4.)
   nano /etc/passwd
+  5.)
   mkdir myDir
   man chmod
   chmod o-w myDir
@@ -11,14 +16,21 @@
   ls
   ls -l
   cd ..
+  6.)
   mkdir myDir2
   mkdir myDir3
+  7.)
   cd myDir2
   touch myFile.txt
   mv myFile.txt ../myDir3
+  8.)
   man free
   free -m
+  9.)
   cat /etc/os-release
+  10.) 
+  ls -l /etc/os-release
+  exit
   ls
   mv Assignment1.txt Assignment1
   ls
