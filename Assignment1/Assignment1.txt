@@ -1,0 +1,63 @@
+Script started on 2023-09-23 00:13:57-04:00
+1.) mkdir & cd commands
+bash-4.4$ mkdir Assignment1
+bash-4.4$ cd Assignment1
+2.) echo command & SHELL global variable
+bash-4.4$ echo $SHELL
+/bin/bash
+3.) echo command & HOME global variable
+bash-4.4$ echo $HOME
+/mnt/scratch/FA23_CS131_Ashish/jamesf23
+4.) UID is 1123, GID is 1123
+used the nano command on /etc/passwd file
+bash-4.4$ nano /etc/passwd
+jamesf23:x:1123:1123::/mnt/scratch/FA23_CS131_Ashish/jamesf23:/bin/bash
+5.) I can cd into the directory, ls and ls -l to read the directory but it
+does not show anything because the directory is empty. Cannot create new file.
+bash-4.4$ mkdir myDir
+bash-4.4$ man chmod
+bash-4.4$ chmod o-w myDir
+bash-4.4$ cd myDir
+bash-4.4$ ls
+bash-4.4$ ls -l
+total 0
+bash-4.4$ cd ..
+6.)
+bash-4.4$ mkdir myDir2
+bash-4.4$ mkdir myDir3
+7.)
+bash-4.4$ cd myDir2
+bash-4.4$ touch myFile.txt
+bash-4.4$ mv myFile.txt ../myDir3
+8.) 71367 total mebibytes
+bash-4.4$ man free
+bash-4.4$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       12465        1206        1271       57695       55132
+Swap:          4119        1058        3061
+9.) /etc/os-release file contains operating system version information
+bash-4.4$ cat /etc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+10.) all users are given all permissions to the /etc/os-release file
+bash-4.4$ ls -l /etc/os-release
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
+bash-4.4$ exit
+exit
+
+Script done on 2023-09-23 01:30:14-04:00
