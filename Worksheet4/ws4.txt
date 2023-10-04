@@ -1,0 +1,515 @@
+Script started on 2023-10-04 13:05:00-04:00
+bash-4.4$ vi ~/.bashrc
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"~/.bashrc" [New File][2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[?25l[m[24;1H[1m[37m[41mE348: No string under cursor[1;1H[?25h[?25l[m[24;1H[1m--[m[1m[37m[41m4[m[1m INSERT --[m[1m[37m[41mi[m[24;13H[K[1;1H[?25h[?25l#[?25h[?25l[1;1H[K[1;1H[?25h[?25l#[?25h[?25lW[?25h[?25l[1;2H[K[1;2H[?25h[?25lw[?25h[?25lo[?25h[?25lr[?25h[?25lk[?25h[?25ls[?25h[?25lh[?25h[?25le[?25h[?25le[?25h[?25lt[?25h[?25l [?25h[?25l4[?25h[?25l [?25h[?25la[?25h[?25ll[?25h[?25l[1;15H[K[1;15H[?25h[?25l[1;14H[K[1;14H[?25h[?25l-[?25h[?25l [?25h[?25la[?25h[?25ll[?25h[?25li[?25h[?25la[?25h[?25ls[?25h[?25le[?25h[?25ls[?25h[?25l[2;1H[K[2;1H[?25h[?25la[?25h[?25ll[?25h[?25li[?25h[?25la[?25h[?25ls[?25h[?25l[2;5H[K[2;5H[?25h[?25ls[?25h[?25l [?25h[?25ll[?25h[?25l-[?25h[?25l[2;8H[K[2;8H[?25h[?25l=[?25h[?25l"[?25h[?25ll[?25h[?25ls[?25h[?25l [?25h[?25l-[?25h[?25ll[?25h[?25lt[?25h[?25lr[?25h[?25l"[?25h[?25l[3;1H[K[3;1H[?25h[?25la[?25h[?25ll[?25h[?25li[?25h[?25la[?25h[?25ls[?25h[?25l [?25h[?25lw[?25h[?25l=[?25h[?25l"[?25h[?25ll[?25h[?25ls[?25h[?25l-[?25h[?25l[3;12H[K[3;12H[?25h[?25l [?25h[?25l-[?25h[?25ll[?25h[?25l|[?25h[?25lw[?25h[?25lc[?25h[?25l"[?25h[?25l wc"[?25h[?25l | wc"[?25h[24;1H[K[3;15H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l".bashrc" [New] 3L, 62C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ alias l="ls - [Klter[K[Kr"
+bash-4.4$ alias w [K= [K"ls -;|[K[Kl|wc" wc"[1@ [C[C[C[C[C
+bash-4.4$ l
+total 236
+-rw-rw-r-- 1 jamesf23 jamesf23 235654 Aug 28 19:31 index.html
+drwxrwxr-x 7 jamesf23 jamesf23   4096 Sep 23 01:31 cs131
+-rw-rw-r-- 1 jamesf23 jamesf23      0 Oct  4 13:05 ws4.txt
+bash-4.4$ w
+      4      29     188
+bash-4.4$ cd[K[Kcd cs131
+bash-4.4$ mkdir Worksheet4
+bash-4.4$ cd Worksheet4
+bash-4.4$ mkdir Subscribers
+bash-4.4$ cp ../Worksheet3/'Global YouTube Statistics.Script started on 2023-10-04 13:34:10-04:00
+bash-4.4$ exit
+
+Script done on 2023-10-04 13:34:15-04:00
+Script started on 2023-10-04 13:35:23-04:00
+bash-4.4$ grep "in[K[K,India,"[K'[C[1P,India,'',India,'[C[C[C[C[C[C[C[C 'Global YouTube Statistc[Kics.csv' | cut -d "," -f [K,[K 2 > India[K[K[K[K[KSubsr[Kcrie[Kbers/India.txt
+bash: Subscribers/India.txt: No such file or directory
+bash-4.4$ touch Subsr[Kcribers/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgrep ',India,' 'Global YouTube Statistics.csv' | cut -d "," -f 2 > Subscribers/India.txt'[C'Subscribers/India.txt'
+bash: Subscribers/India.txt: No such file or directory
+bash-4.4$ touch 'Subsrc[K[Kcribers/India.txt'
+touch: cannot touch 'Subscribers/India.txt': No such file or directory
+bash-4.4$ ls
+'Global YouTube Statistics.csv'   ws4.txt
+bash-4.4$ lstouch 'Subscribers/India.txt'[C[C[C[C[C[C[C[C[C[C[61@grep ',India,' 'Global YouTube Statistics.csv' | cut -d "," -f 2 >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'[1PIndia.txt'
+bash-4.4$ grep ',India,' 'Global YouTube Statistics.csv' | cut -d "," -f 2 > 'India.txt'[1P.txt'[1P.txt'[1P.txt'[1P.txt'[1P.txt'U.txt'n.txt'i.txt't.txt'e.txt'd.txt'_.txt'S.txt't.txt'a.txt't.txt'e.txt's.txt'[C[C[1P[1P[1P[1P[1P[1@U[1@n[1@i[1@t[1@e[1@d[1@ [1@S[1@t[1@a[1@t[1@e[1@s
+bash-4.4$ cat India.txxt
+cat: India.txxt: No such file or directory
+bash-4.4$ ca[K[Kcat India.txxt[1Pt
+T-Series
+SET India
+Zee Music Company
+Sony SAB
+Zee TV
+ChuChu TV Nursery Rhymes & Kids Songs
+Shemaroo Filmi Gaane
+Colors TV
+T-Series Bhakti Sagar
+Tips Official
+Wave Music
+Aaj Tak
+Sony Music India
+YRF
+Infobells - Hindi
+Shemaroo
+Voot Kids
+Speed Records
+Ishtar Music
+CarryMinati
+Goldmines Gaane Sune Ansune
+Sony PAL
+Jkk Entertainment
+ABP NEWS
+Ultra Bollywood
+Saregama Music
+IndiaTV
+T-Series Bollywood Classics
+Geet MP3
+Jingle Toons
+Rajshri
+KHANDESHI MOVIES
+CVS 3D Rhymes & Kids Songs
+Eros Now Music
+StarPlus
+MR. INDIAN HACKER
+Worldwide Records Bhojpuri
+Round2hell
+Zee News
+ashish chanchlani vines
+infobells - Tamil
+Aditya Movies
+infobells - Telugu
+Shemaroo Movies
+Crazy XYZ
+Dushyant kukreja
+Goldmines Bollywood
+BB Ki Vines
+The Lallantop
+Pen Movies
+Tilak
+Wave Music Bhojpuri
+unknown boy varun
+Technical Guruji
+White Hill Music
+Ultra Movie Parlour
+Sun TV
+Heroindori
+Goldmines Cineplex
+Village Cooking Channel
+Sidhu Moose Wala
+Ishaan Ali 11
+Azhan5star
+Dangal TV Channel
+Dr. Vivek Bindra: Motivational Speaker
+Vijay Television
+Emiway Bantai
+Kiddiestv Hindi - Nursery Rhymes & Kids Songs
+Green Gold TV - Official Channel
+RKD Studios
+DLS News
+etvteluguindia
+Manoj  parihar
+Sonotek
+Wow Kidz Action
+Triggered Insaan
+Shemaroo Comedy
+Priyal Kukreja
+jaanvi patel
+FactTechz
+News18 India
+Fun For Kids TV - Hindi Rhymes
+Stubborn Facts
+Taarak Mehta Ka Ooltah Chashmah
+Prajapati News
+Pop Chartbusters
+Aayu and Pihu Show
+NMF News
+SriBalajiMovies
+Lahari Music - TSeries
+BBC News Hindi
+Bollywood Classics
+wifistudy
+Dear Sir
+Narendra Modi
+Volga Video
+DM - Desi Melodies
+Team Films Bhojpuri
+Zee Music Classic
+Infobells Bangla
+Kashvi Adlakha
+Harsh Beniwal
+LOKESH GAMER
+Mazhavil Manorama
+Pok���������
+The MriDul
+SRK MUSIC
+Sony LIV
+T-Series Hamaar Bhojpuri
+NDTV India
+Chetan Monga Vlogs
+Republic Bharat
+THE BROWN SIBLINGS
+Sony Music South
+A2 Motivation by Arvind Arora
+StudyIQ IAS
+Colors Rishtey
+Noman Official
+Lotus Music
+Aadishakti Films
+TV9 Bharatvarsh
+Gyan Gaming�
+Indore Physical Academy
+RS 1313 SHORTS
+ZEE5
+infobells - Kannada
+SEVENGERS
+Zee Bangla
+Neha Kakkar
+ETV Jabardasth
+Zee Telugu
+T-Series Regional
+Kids TV India Hindi Nursery Rhymes
+Think Music India
+Goldmines Premiere
+The Vishal bhatt
+NishaMadhulika
+MyMissAnand
+infobells
+JOJO TV - Hindi Stories
+Anaysa
+Sanjoy Das Official
+Vijay Kumar Viner Vlogs
+The World Adventures ������
+Vibhu 96
+Blockbuster Movies
+Trakin Tech
+Kabita's Kitchen
+Sonotek Bhakti
+Technology Gyan
+CookingShooking Hindi
+Lokdhun Punjabi
+Jomy Production
+Right to Shiksha
+FACT FIRE KING
+Health Time
+NDTV
+Family Fitness
+Zee Tamil
+Flowers Comedy
+Wave Music Bhakti
+CKM
+DEV Ke Facts
+Zee Kids
+Pari's Lifestyle
+bharatzkitchen HINDI
+Free Fire India Official
+Make Joke Of
+bash-4.4$ cat India.txtxt[C[C[C[C[C[C[C[C[C[Cgrep ',United States,' 'Global YouTube Statistics.csv' | cut -d "," -f 2 > 'United_States.txt'[1P[1@3
+bash-4.4$ cat United_States.txt
+170000000
+166000000
+162000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27300000
+27000000
+26700000
+26700000
+26500000
+26400000
+26200000
+26100000
+25700000
+25700000
+25600000
+25500000
+25400000
+25200000
+25100000
+24800000
+24700000
+24600000
+24600000
+24400000
+24100000
+24100000
+24100000
+24000000
+23900000
+23900000
+23900000
+23800000
+23800000
+23700000
+23700000
+23600000
+23600000
+23300000
+23200000
+23200000
+23100000
+23100000
+22900000
+22700000
+22600000
+22600000
+22600000
+22500000
+22500000
+22300000
+22200000
+22000000
+22000000
+21900000
+21900000
+21900000
+21800000
+21800000
+21600000
+21500000
+21300000
+21300000
+21300000
+21100000
+21000000
+21000000
+21000000
+20900000
+20900000
+20900000
+20700000
+20700000
+20700000
+20500000
+20400000
+20200000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20000000
+20000000
+19800000
+19800000
+19700000
+19700000
+19600000
+19600000
+19600000
+19600000
+19200000
+19100000
+19100000
+18800000
+18800000
+18600000
+18400000
+18400000
+18300000
+18300000
+18100000
+18100000
+18000000
+18000000
+18000000
+17900000
+17900000
+17900000
+17900000
+17900000
+17900000
+17800000
+17700000
+17500000
+17400000
+17300000
+17200000
+17100000
+17000000
+16900000
+16900000
+16900000
+16900000
+16700000
+16700000
+16600000
+16500000
+16500000
+16400000
+16400000
+16300000
+16300000
+16300000
+16300000
+16300000
+16200000
+16200000
+16200000
+16100000
+16100000
+16100000
+15900000
+15900000
+15900000
+15800000
+15700000
+15600000
+15500000
+15500000
+15400000
+15400000
+15400000
+15300000
+15200000
+15100000
+15100000
+15100000
+15000000
+15000000
+15000000
+15000000
+15000000
+14900000
+14900000
+14900000
+14800000
+14800000
+14800000
+14800000
+14800000
+14800000
+14700000
+14700000
+14700000
+14700000
+14700000
+14700000
+14600000
+14600000
+14600000
+14600000
+14500000
+14500000
+14500000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14400000
+14400000
+14300000
+14300000
+14200000
+14100000
+14100000
+14000000
+13900000
+13900000
+13900000
+13900000
+13800000
+13600000
+13600000
+13600000
+13500000
+13500000
+13400000
+13400000
+13400000
+13400000
+13400000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13200000
+13200000
+13100000
+13100000
+13100000
+13000000
+13000000
+12900000
+12900000
+12900000
+12800000
+12800000
+12700000
+12700000
+12700000
+12700000
+12700000
+12600000
+12600000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12400000
+12400000
+Binary file Global YouTube Statistics.csv matches
+bash-4.4$ cat United_States.txt[C[C[C[C[C[C[C[C[C[Cgrep ',United States,' 'Global YouTube Statistics.csv' | cut -d "," -f 3 > 'United_States.txt'[C[C[C[C[C[C[C[C[C[Ccat India.txt[Kxt[1Ptxt[C[C[C[C[C[C[C[C[C[Cgrep ',United States,' 'Global YouTube Statistics.csv' | cut -d "," -f 2 > 'United_States.txt'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16PIndia,' 'Global YouTube Statistics.csv' | cut -d "," -f 2 > 'India.txt'[1P[1@3
+bash-4.4$ awk '{total_sum += $1 } END { if (NR >0[K[K[K>0) print total_sum/NR }' India.txt >>[K ws4_means.txt
+bash-4.4$ awk '{total_sum += $1 } END { if (NR>0) print total_sum/NR }' India.txt > ws4_means.txt[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1@U[1@n[1@i[1@t[1@e[1@d[1@)[1P[1@_[1@s[1@t[1P[1P[1@S[1@t[1@a[1@t[1@e[1@s[C[C[C[C[C[C> ws4_means.txt
+bash-4.4$ cat ws4_means.txt
+2.56583e+07
+2.30897e+07
+bash-4.4$ exit
+
+Script done on 2023-10-04 14:09:09-04:00
