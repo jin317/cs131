@@ -72,8 +72,8 @@ d. The vim command was terminated so it no longer shows in the ps command output
 3952156 pts/2    00:00:00 bash
 3953800 pts/2    00:00:00 ps
 
-5) The init process is the very first process executed by the kernel when booting that becomes the root process
-   for all the following processes in the system. It has the PID of 1.
+5) The init process is the very first process executed by the kernel when booting up the system that becomes the parent or ancestor
+   process for all the following processes and has the PID of 1.
 
    command: ps aux | grep "systemd"
 root           1  0.3  0.0 178624 18368 ?        Rs   Oct05  44:55 /usr/lib/systemd/systemd --switched-root --system --deserialize 17
