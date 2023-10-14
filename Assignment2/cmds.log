@@ -23,7 +23,7 @@
  
 3) 
   846  ps -u jamesf23
-  847  ps -u jamesf23 >> Assignment.txt
+  847  ps -u jamesf23 >> Assignment2.txt
   
 4)
   In terminal 1:
