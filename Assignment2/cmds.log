@@ -1,0 +1,40 @@
+  820  mkdir Assignment2
+  821  cd Assignment2
+  
+1)
+  822  find /etc -type f > one.txt 2> two.txt
+  823  cat one.txt
+  824  cat two.txt
+  825  cp ../Worksheet3/'Global YouTube Statistics.csv' .
+  826  ls
+  827  cat one.txt > Assignment2.txt
+  828  cat two.txt >> Assignment2.txt
+  
+2)
+  829  man cut 
+  830  cut -d "," -f20,21
+  831  cut -d "," -f20,21 'Global YouTube Statistics.csv'
+  832  man sort -k
+  833  cut -d "," -f20,21 'Global YouTube Statistics.csv | sort -d "," -k2 -k1n
+  838  man uniq
+  843  cut -d "," -f20,21 'Global YouTube Statistics.csv' | sort -t "," -k2,2 -k1,1n | uniq -c | sort -t " " -k1nr
+  844  cut -d "," -f20,21 'Global YouTube Statistics.csv' | sort -t "," -k2,2 -k1,1n | uniq -c | sort -t " " -k1nr | head -n 3
+  845  cut -d "," -f20,21 'Global YouTube Statistics.csv' | sort -t "," -k2,2 -k1,1n | uniq -c | sort -t " " -k1nr | head -n 3 >> Assignment2.txt
+ 
+3) 
+  846  ps -u jamesf23
+  847  ps -u jamesf23 >> Assignment.txt
+  
+4)
+  In terminal 1:
+  848  vi file.txt
+  
+  In terminal 2:
+  813  ps -u jamesf23
+  814  ps -u jamesf23 >> cs131/Assignment2/Assignment2.txt
+
+5)
+  849  ps aux | grep "systemd"
+  850  ps aux | grep "systemd" >> Assignment2.txt
+
+  851  history | tail -n 40 > cmds.log
