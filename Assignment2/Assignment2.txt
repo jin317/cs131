@@ -62,7 +62,7 @@ b. Each terminal is specified under the TTY column to show which commands are be
 3952357 pts/73   00:00:00 vim
 3953395 pts/2    00:00:00 ps
 
-d) The vim command was terminated so it no longer shows in the ps command output.
+d. The vim command was terminated so it no longer shows in the ps command output.
     PID TTY          TIME CMD
 3913758 ?        00:00:02 systemd
 3913760 ?        00:00:00 (sd-pam)
