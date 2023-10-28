@@ -1,0 +1,19 @@
+  893  ls
+  894  cd cs131
+  895  mkdir Worksheet5
+  896  cd Worksheet5
+  897  mkdir 'United States'
+  910  cd 'United States'
+  911  categories=("Music" "Entertainment" "Gaming" "Comedy")
+  918  for category in "${categories[@]}"; do touch "$category.txt"; done
+  922  cd ..
+  925  for category in "${categories[@]}"; do cat "United States/$category.txt"; done 
+  930  for category in "${categories[@]}"; do wc -l "United States/$category.txt"; done
+  934  for category in "${categories[@]}"; do grep -E "$category.*,United States" "Global YouTube Statistics.csv"; done
+  935  for category in "${categories[@]}"; do grep -E "$category.*,United States" 'Global YouTube Statistics.csv' > "United States/$category.txt"; done
+  937  for category in "${categories[@]}"; do wc -l "United States/$category.txt"; done
+  938  ls
+  940  touch ws5.txt
+  941  for category in "${categories[@]}"; do wc -l "United States/$category.txt" >> ws5.txt; done
+  942  cat ws5.txt
+  943  history > cmds.log
