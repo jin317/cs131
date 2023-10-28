@@ -1,4 +1,4 @@
-72 United States/Music.txt
-65 United States/Entertainment.txt
-26 United States/Gaming.txt
-22 United States/Comedy.txt
+72 lines in Worksheet5/United States/Music.txt
+65 lines in Worksheet5/United States/Entertainment.txt
+26 lines in Worksheet5/United States/Gaming.txt
+22 lines in Worksheet5/United States/Comedy.txt
