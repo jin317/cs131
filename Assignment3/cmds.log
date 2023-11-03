@@ -1,0 +1,30 @@
+  963  mkdir Assignment3
+  964  cd Assignment3
+  965  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awkdata/last.fake
+  966  wget https://github.com/khanchandaniashish/CS131/blob/main/awkdata/passwd.fake
+  967  wget https://github.com/khanchandaniashish/CS131/blob/main/awkdata/ps.fake
+  968  ls
+
+Task 1:
+  969  wc -l last.fake > Assignment3.txt
+  970  grep 'f23' last.fake > lastf23.fake
+  971  wc -l lastf23.fake >> Assignment3.txt
+
+Task 2:
+  983  grep 'Sun' lastf23.fake | awk 'BEGIN{print "The list of people who worked on Sunday are:"} !seen[$1]++ {names[n++] = $1} END { for(i=0; i<n; i++) print names[i]; print "Kudos to these people for putting in the work"}' >> Assignment3.txt
+
+Task 3:
+  985  awk '$7 >= "23:00" || $7 <= "4:00"' lastf23.fake | awk 'BEGIN {print "Night Owls List:"} !seen[$1]++ {names[n++] = $1} END {for(i=0; i<n; i++) print names[i]; print "Nights Owls are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt
+
+Task 4:
+  988  awk '$7 >= "05:00" || $7 <= "09:00"' lastf23.fake | awk 'BEGIN {print "Early Birds List:"} !seen[$1]++ {name[n++] = $1} END {for(i=0; i<n; i++) print name[i]; print "Early Birds are dope. Please ensure you get enough sleep though."}' >> Assignment3.txt
+
+Task 5:
+  991  awk '/^t/ {print $1}' lastf23.fake | sort | uniq >> Assignment3.txt
+
+Task 6:
+  992  awk -F: '/^a/ && $3 % 2 == 0 {print $1}' passwd.fake 
+
+Task 7:
+ 1006  sed 's/[a-zA-Z0-9[:space:]]//g' passwd.fake | tr ',' '\n' | sort -u >> Assignment3.txt
+ 1007  history > cmds.log
