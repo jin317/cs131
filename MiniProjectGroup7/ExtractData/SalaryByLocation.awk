@@ -1,3 +1,8 @@
+BEGIN{
+	print "Location, Salary Estimate" > "SalaryByLocation.csv"
+}
+
+
 {
 	# Check for the "$XXXK-$XXXK" pattern in each line
 	if (match($0, /\$[0-9]+K-\$[0-9]+K/)) {
