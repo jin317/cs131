@@ -4,70 +4,69 @@
 		salary_estimate = substr($0, RSTART, RLENGTH)  # Store matched pattern
 	}
 
-	rgx="\"[a-zA-Z]*, [A-Z]*\""
 	if ($0 ~ /\"[a-zA-Z]*, NY/) {
 		if (salary_estimate) {
-			print "New York,", salary_estimate > "SalaryByLocation.csv"
+			print "New York," salary_estimate > "SalaryByLocation.csv"
 			salary_estimate = ""
 		}
 	}
 	else if ($0 ~ /\"[a-zA-Z]*, NJ/) {
                 if (salary_estimate) {
-                        print "New Jersey,", salary_estimate > "SalaryByLocation.csv"
+                        print "New Jersey," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
 	else if ($0 ~ /\"[a-zA-Z]*, CA/) {
                 if (salary_estimate) {
-                        print "California,", salary_estimate > "SalaryByLocation.csv"
+                        print "California," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
 	else if ($0 ~ /\"[a-zA-Z]*, IL/) {
                 if (salary_estimate) {
-                        print "Illinois,", salary_estimate > "SalaryByLocation.csv"
+                        print "Illinois," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
 	else if ($0 ~ /\"[a-zA-Z]*, TX/) {
                 if (salary_estimate) {
-                        print "Texas,", salary_estimate > "SalaryByLocation.csv"
+                        print "Texas," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
         else if ($0 ~ /\"[a-zA-Z]*, AZ/) {
                 if (salary_estimate) {
-                        print "Arizona,", salary_estimate > "SalaryByLocation.csv"
+                        print "Arizona," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
         else if ($0 ~ /\"[a-zA-Z]*, DE/) {
                 if (salary_estimate) {
-                        print "Delaware,", salary_estimate > "SalaryByLocation.csv"
+                        print "Delaware," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
 	else if ($0 ~ /\"[a-zA-Z]*, PA/) {
                 if (salary_estimate) {
-                        print "Pennsylvania,", salary_estimate > "SalaryByLocation.csv"
+                        print "Pennsylvania," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
         else if ($0 ~ /\"[a-zA-Z]*, FL/) {
                 if (salary_estimate) {
-                        print "Florida,", salary_estimate > "SalaryByLocation.csv"
+                        print "Florida," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
         else if ($0 ~ /\"[a-zA-Z]*, OH/) {
                 if (salary_estimate) {
-                        print "Ohio,", salary_estimate > "SalaryByLocation.csv"
+                        print "Ohio," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
 	else if ($0 ~ /\"[a-zA-Z]*, United Kingdom/) {
                 if (salary_estimate) {
-                        print "United Kingdom,", salary_estimate > "SalaryByLocation.csv"
+                        print "United Kingdom," salary_estimate > "SalaryByLocation.csv"
                         salary_estimate = ""
                 }
         }
